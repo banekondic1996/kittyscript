@@ -1,12 +1,12 @@
-// example.kss — order doesn't matter!
+// example.kss
 
-startApp()   // called before anything is declared — works fine
+startApp()   
 
-const result = add(10, 20)   // add declared below — works fine
+const result = add(10, 20)   
 console.log(result)
 
 function startApp() {
-  console.log(`Starting with version: ${VERSION}`)
+  console.log(`Starting with version: ${VERSION}`) //works normally, takes last VERSION variable in script
 }
 
 const VERSION = "1.0.0"
