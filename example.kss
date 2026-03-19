@@ -1,0 +1,16 @@
+// example.kss — order doesn't matter!
+
+startApp()   // called before anything is declared — works fine
+
+const result = add(10, 20)   // add declared below — works fine
+console.log(result)
+
+function startApp() {
+  console.log(`Starting with version: ${VERSION}`)
+}
+
+const VERSION = "1.0.0"
+
+function add(a, b) {
+  return a + b
+}
